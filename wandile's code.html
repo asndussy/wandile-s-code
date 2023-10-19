@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personalized Message</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>I love you so much, <span id="name">Wandile</span></h1>
+        <p>❤️❤️❤️❤️❤️</p>
+        <p>Enter your name: <input type="text" id="nameInput" placeholder="Type your name here"></p>
+        <button onclick="updateName()">Personalize</button>
+    </div>
+
+    <script>
+        function updateName() {
+            const nameInput = document.getElementById("nameInput");
+            const nameSpan = document.getElementById("name");
+            nameSpan.textContent = nameInput.value;
+        }
+    </script>
+</body>
+</html>
